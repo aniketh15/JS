@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Beginner app</title>
+</head>
+
+<body style="margin-left: 40%">
+    <button id="btn1" onclick="Change1()" style="width: 100px; height: 100px;margin: 0 10px">Click me to change color!</button>
+    <button id="btn2" onclick="Change2()" style="width: 100px; height: 100px;margin: 0 10px">Click me to change text!</button>
+    <button id="btn3" onclick="Change3()" style="width: 100px; height: 100px;margin: 0 10px">Click me to change background color!</button>
+    <script>
+        var button1 = document.getElementById("btn1");
+        var button2 = document.getElementById("btn2");
+        var button3 = document.getElementById("btn3");
+
+        function Change1() {
+            button1.style.color = "Red";
+        }
+
+        function Change2() {
+            button2.innerHTML = "Text Changed!";
+        }
+
+        function Change3() {
+            button3.style.backgroundColor = "Blue";
+        }
+    </script>
+</body></html>

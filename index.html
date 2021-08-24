@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Beginner app</title>
+</head>
+
+<body style="padding: 10px 20px; margin-left: 50%">
+    <button id="btn1" onclick="Change()" style="width: 100px; height: 100px">Click me!</button>
+    <script>
+        var button = document.getElementById("btn1");
+        var count = 0;
+
+        function Change() {
+            if (count == 1) {
+                button.innerHTML = "Text Changed!";
+            } else if (count == 0) {
+                button.style.color = "Red";
+            } else if (count == 2) {
+                button.style.backgroundColor = "Blue";
+            } else {
+                count = 0;
+            }
+            count++;
+        }
+    </script>
+</body></html>
